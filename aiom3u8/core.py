@@ -34,10 +34,10 @@ if sys.platform.startswith('win'):
     if sys.version_info >= (3, 8):
         # window policy
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-else:
-    import uvloop
-    # others os policy
-    asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
+# else:
+#     import uvloop
+#     # others os policy
+#     asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
 
 class Core:
