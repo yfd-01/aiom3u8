@@ -14,12 +14,12 @@ $ python -m pip install aiom3u8 -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```python
 import aiom3u8
 
-aiom3u8.download("https://demo.com/demo/demo.m3u8", "C:\\videos", "video_name")  # 使用默认参数
+aiom3u8.download("https://demo.com/demo/demo.m3u8", "C:\\video_path", "video_name")  # 使用默认参数
 
 params = {...}
 cookies = {...}
 headers = {...}
-aiom3u8.download("https://demo.com/demo/demo.m3u8", "C:\\videos", "video_name",  # 使用调节参数 
+aiom3u8.download("https://demo.com/demo/demo.m3u8", "C:\\video_path", "video_name",  # 使用调节参数 
                   video_name_extension=".mp4", params=params, cookies=cookies, headers=headers, proxy="http://127.0.0.1:10809/"
                   auto_highest_bandwidth=True, progress_bar_display=True, async_tasks_maintain=20, inspect_interval=3.,
                   failure_retries=5)
@@ -66,12 +66,12 @@ $ python -m pip install aiom3u8 -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```python
 import aiom3u8
 
-aiom3u8.download("https://demo.com/demo/demo.m3u8", "C:\\videos", "video_name")  # Using default arguments
+aiom3u8.download("https://demo.com/demo/demo.m3u8", "C:\\video_path", "video_name")  # Using default arguments
 
 params = {...}
 cookies = {...}
 headers = {...}
-aiom3u8.download("https://demo.com/demo/demo.m3u8", "C:\\videos", "video_name",  # Using adjustment arguments
+aiom3u8.download("https://demo.com/demo/demo.m3u8", "C:\\video_path", "video_name",  # Using adjustment arguments
                   video_name_extension=".mp4", params=params, cookies=cookies, headers=headers, proxy="http://127.0.0.1:10809/"
                   auto_highest_bandwidth=True, progress_bar_display=True, async_tasks_maintain=20, inspect_interval=3.,
                   failure_retries=5)
